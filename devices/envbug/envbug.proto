@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+message EnvBugMessage {
+	sint32 temperature = 1;
+	uint32 humidity    = 2;
+	uint32 light       = 3;
+	uint32 pir         = 4; // Triggers per interval
+	uint32 mic         = 5; // Level of noise in last interval
+	uint32 accX        = 6;
+	uint32 accY        = 7;
+	uint32 accZ        = 8;
+
+	uint32 duty        = 9;
+}

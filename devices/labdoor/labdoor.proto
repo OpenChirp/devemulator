@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+message LabDoorMessage {
+	
+	enum Door {
+		CLOSED = 0; // only for status, so adjective
+		OPEN   = 1; // adjective or verb
+	}
+
+	// Sent down to lab door
+	Door triggeropen = 1;
+
+	// Reported from lab door
+	Door doorstatus = 2;
+}
