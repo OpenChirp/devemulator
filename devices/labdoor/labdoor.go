@@ -38,7 +38,7 @@ func (d *Device) RX(rxdata []byte) []byte {
 		log.Println(d.id + "(labdoor): Failed to unmarshal rxdata")
 		return nil
 	}
-	fmt.Println(d.id + "(labdoor): ")
+	fmt.Printf("%s (labdoor): ", d.id, m.Triggeropen.String())
 
 	return nil
 }
