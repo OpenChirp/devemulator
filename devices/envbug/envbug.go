@@ -43,7 +43,7 @@ func (d *Device) RX(rxdata []byte) []byte {
 		return nil
 	}
 
-	fmt.Println(d.id + "(envbug): Instructed to change reporting duty cycle to " + string(m.Duty))
+	fmt.Printf("%s (envbug): Instructed to change reporting duty cycle to %d\n", d.id, m.Duty)
 
 	return nil
 }
